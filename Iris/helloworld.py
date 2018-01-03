@@ -20,7 +20,7 @@ clf=tree.DecisionTreeClassifier()
 clf= clf.fit(train_data,train_target)
 print(test_target)
 print(clf.predict(test_data))
-
+print("Generating as irisTree.dot...")
 tree.export_graphviz(clf,
 out_file="irisTree.dot",  feature_names=iris.feature_names,  
                          class_names=iris.target_names,  
