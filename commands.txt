@@ -1,1 +1,5 @@
+#Create a graphical representation of the dot file
 dot -Tpng irisTree.dot -o irisTree.png
+
+#Split the training and testing data from the given data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5)
